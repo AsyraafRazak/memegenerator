@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/generate-meme',[App\Http\Controllers\MemeController::class, 'getMemes']);
+Route::get('/api-page',[App\Http\Controllers\APIController::class, 'openAPI']);

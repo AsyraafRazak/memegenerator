@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Meme generator</title>
+  <title>Page API</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -17,28 +17,25 @@
 
   <div class="container">
     <div class="text-center mb-4">
-      <h2>Meme Generator</h2>
-      <p>Press generate button to generate list of memes</p>
+      <h2>API</h2>
+      <p>test API kat sini</p>
       <a href="/generate-meme" class="btn btn-success">Generate Meme</a>
       <a href="/api-page" class="btn btn-primary">API</a>
-      <a href="/remove-meme" class="btn btn-danger">Remove Meme</a>
     </div>
     <table class="table table-hover">
       <thead>
         <tr>
-          <th>#</th>
-          <th>Meme</th>
-          <th class="text-center">Image</th>
+          <th></th>
+          <th></th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
-        @foreach($memes as $meme)
         <tr>
-          <td>{{$loop->iteration}}</td>
-          <td>{{$meme->name}}</td>
-          <td class="text-center"><img src="{{$meme->url}}" alt="img" width=20%></td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr>
-        @endforeach
       </tbody>
     </table>
   </div>
