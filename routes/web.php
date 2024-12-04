@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $memes = [];
+    return view('welcome', compact('memes'));
 });
 
 Route::get('/generate-meme',[App\Http\Controllers\MemeController::class, 'getMemes']);
